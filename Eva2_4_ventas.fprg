@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-07 03:44:53 p. m."/>
+        <attribute name="created" value="VXN1YXJpbztQQzsyMDI0LTAzLTA3OzAzOjMxOjE5IHAuIG0uOzIzNTg="/>
+        <attribute name="edited" value="VXN1YXJpbztQQzsyMDI0LTAzLTA3OzAzOjQ0OjUzIHAuIG0uOzE7MjQ2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pieza" type="Integer" array="False" size=""/>
+            <declare name="CalSal" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;Cuantas piezas quires?&quot;" newline="True"/>
+            <input variable="pieza"/>
+            <if expression="pieza&lt;=1000">
+                <then>
+                    <assign variable="CalSal" expression="pieza*800"/>
+                </then>
+                <else>
+                    <assign variable="CalSal" expression="pieza*500"/>
+                </else>
+            </if>
+            <output expression="&quot;el precio es &quot;" newline="True"/>
+            <output expression="CalSal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
